@@ -4,6 +4,13 @@ html
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: hsl(0, 0%, 81%);
+}
+
+section
+{
+    padding: 1em;
+    border-radius: 1em;
 }
 
 h1, h2
@@ -23,8 +30,38 @@ p
     font-weight: 500;
 }
 
+.dan
+{
+    background-color: hsl(263, 55%, 52%);
+}
+
+.jon
+{
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jean
+{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.pat
+{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira
+{
+    background-color: hsl(0, 0%, 100%);
+}
+
 .attribution 
 { 
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 50px;
     font-size: 11px; 
     text-align: center; 
 }
