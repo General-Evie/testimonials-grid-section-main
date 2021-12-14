@@ -1,3 +1,28 @@
+html
+{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1, h2
+{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 600;
+}
+
+h1
+{
+    font-size: 1em;
+}
+
+p
+{
+    font-family: 'Barlow Semi Condensed';
+    font-weight: 500;
+}
+
 .attribution 
 { 
     font-size: 11px; 
