@@ -9,8 +9,6 @@ img
     border-radius: 50%;
 }
 
-
-
 html
 {
     display: grid;
@@ -22,13 +20,12 @@ html
 body
 {
     max-width: 80%;
-    gap: 1em;
     color: #fff;
 }
 
 section
 {
-    
+    display: grid;
     padding: 2em;
     border-radius: 1em;
 }
@@ -57,11 +54,47 @@ p
     opacity: .7;
 }
 
+.container
+{
+    display: grid;
+    grid-template-areas: 
+    'one'
+    'two'
+    'three'
+    'four'
+    'five';
+    gap: 1.5rem;
+}
+
+.container:nth-child(1)
+{
+   grid-area: one; 
+}
+
+.container:nth-child(2)
+{
+   grid-area: two; 
+}
+
+.container:nth-child(3)
+{
+   grid-area: three; 
+}
+
+.container:nth-child(4)
+{
+   grid-area: four; 
+}
+.container:nth-child(5)
+{
+   grid-area: five; 
+}
+
 .dan
 {
-    /* display: grid;
-    grid-template-columns: span 2;
-    grid-template-rows: span 1; */
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 1fr; 
     background-image: url(images/bg-pattern-quotation.svg);
     background-repeat: no-repeat;
     background-position-y: top;
@@ -76,9 +109,9 @@ p
 
 .jon
 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: span 1;
-    grid-template-rows: span 1; */
+    grid-template-rows: span 1; 
     background-color: hsl(217, 19%, 35%);
 }
 
@@ -89,9 +122,9 @@ p
 
 .jean
 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: span 1;
-    grid-template-rows: span 1; */
+    grid-template-rows: span 1; 
     color: #000;
     background-color: hsl(0, 0%, 100%);
 }
@@ -103,9 +136,9 @@ p
 
 .pat
 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: span 2;
-    grid-template-rows: span 1; */
+    grid-template-rows: span 1; 
     background-color: hsl(219, 29%, 14%);
 }
 
@@ -116,9 +149,9 @@ p
 
 .kira
 {
-    /* display: grid;
+    display: grid;
     grid-template-columns: span 1;
-    grid-template-rows: span 2; */
+    grid-template-rows: span 2; 
     color: #000;
     background-color: hsl(0, 0%, 100%);
 }
@@ -143,4 +176,14 @@ p
 .attribution a 
 { 
     color: hsl(228, 45%, 44%); 
+}
+@media (min-width: 50em)
+{
+    .container
+    {
+        grid-template-areas: 
+        'one one two five'
+        'three four four five'
+        ;
+    }
 }
