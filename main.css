@@ -151,6 +151,7 @@ p
 { 
     color: hsl(228, 45%, 44%); 
 }
+
 @media (min-width: 800px)
 {
 
@@ -167,24 +168,63 @@ p
 {
     html
     {
-        height: 225vh;
+        height: 270vh;
+    }
+
+    h1 
+    {
+        font-size: .8em;
+    }
+
+    h2 
+    {
+        font-size: 1em;
+    }
+
+    p 
+    {
+        font-size: .8em;
     }
 
     .dan 
     {
-        background-position-x: 20em;
+        background-position-x: 10em;
+    }
+
+    .dan img 
+    {
+        border: 2px solid hsl(263, 64%, 65%);
+    }
+
+    .jon img 
+    {
+        border: 2px solid hsl(217, 19%, 35%);
+    }
+
+    .jean img
+    {
+        border: 2px solid hsl(0, 0%, 100%);
+    }
+
+    .pat img
+    {
+        border: 2px solid hsl(263, 64%, 65%);
+    }
+
+    .kira img
+    {
+        border: 2px solid hsl(0, 0%, 100%);
     }
 
     .attribution 
-{ 
-    position: static;
-    color: #000;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 50px;
-    margin-bottom: 15px;
-    font-size: 11px; 
-    text-align: center; 
-}
+    { 
+        color: #000;
+        right: 0;
+        left: 0;
+        bottom: -169vh;
+        margin: 50px;
+        margin-bottom: 15px;
+        font-size: 11px; 
+        text-align: center; 
+    }
 }
